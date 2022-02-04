@@ -1,0 +1,236 @@
+[
+    {
+        "op": "remove",
+        "path": "/server/behaviors/8/aitasks/0",
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "remove",
+        "path": "/server/behaviors/8/aitasks/1",
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "remove",
+        "path": "/server/behaviors/8/aitasks/2",
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "remove",
+        "path": "/server/behaviors/8/aitasks/3",
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "remove",
+        "path": "/server/behaviors/8/aitasks/4",
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "replace",
+        "path": "/client/behaviors/4/code",
+        "value": "nametag",
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "replace",
+        "path": "/server/behaviors/7/code",
+        "value": "nametag",
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "add",
+        "path": "/client/behaviors/-",
+        "value": {
+            "code": "tameable",
+            "disobediencePerDay": 0
+        },
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/-",
+        "value": {
+            "code": "tameable",
+            "disobediencePerDay": 0
+        },
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/-",
+        "value": {
+            "code": "setownerafterinit"
+        },
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "add",
+        "path": "/client/behaviors/-",
+        "value": {
+            "code": "receivecommand",
+            "availableCommands": [
+                {
+                    "commandName": "followmaster",
+                    "commandType": "COMPLEX",
+                    "minObedience": 0
+                },
+                {
+                    "commandName": "stay",
+                    "commandType": "COMPLEX",
+                    "minObedience": 0
+                },
+                {
+                    "commandName": "NEUTRAL",
+                    "commandType": "AGGRESSIONLEVEL",
+                    "minObedience": 0
+                },
+                {
+                    "commandName": "PROTECTIVE",
+                    "commandType": "AGGRESSIONLEVEL",
+                    "minObedience": 0
+                },
+                {
+                    "commandName": "AGGRESSIVE",
+                    "commandType": "AGGRESSIONLEVEL",
+                    "minObedience": 0
+                },
+                {
+                    "commandName": "PASSIVE",
+                    "commandType": "AGGRESSIONLEVEL",
+                    "minObedience": 0
+                }
+            ]
+        },
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/-",
+        "value": {
+            "code": "receivecommand",
+            "availableCommands": [
+                {
+                    "commandName": "followmaster",
+                    "commandType": "COMPLEX",
+                    "minObedience": 0
+                },
+                {
+                    "commandName": "stay",
+                    "commandType": "COMPLEX",
+                    "minObedience": 0
+                },
+                {
+                    "commandName": "NEUTRAL",
+                    "commandType": "AGGRESSIONLEVEL",
+                    "minObedience": 0
+                },
+                {
+                    "commandName": "PROTECTIVE",
+                    "commandType": "AGGRESSIONLEVEL",
+                    "minObedience": 0
+                },
+                {
+                    "commandName": "AGGRESSIVE",
+                    "commandType": "AGGRESSIONLEVEL",
+                    "minObedience": 0
+                },
+                {
+                    "commandName": "PASSIVE",
+                    "commandType": "AGGRESSIONLEVEL",
+                    "minObedience": 0
+                }
+            ]
+        },
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/8/aitasks/-",
+        "value": {
+            "code": "petmeleeattack",
+            "isCommandable": true,
+            "priority": 3,
+            "entityCodes": [
+                "drifter-*"
+            ],
+            "damageByType": {
+                "*-bronze-*": 1.5,
+                "*-corrupt-*": 4,
+                "*-corrupt-sawblade-*": 16
+            },
+            "damageTierByType": {
+                "*-bronze-*": 2,
+                "*-corrupt-*": 3,
+                "*-corrupt-sawblade-*": 3
+            },
+            "mincooldown": 1000,
+            "maxcooldown": 1500,
+            "damageTypeByType": {
+                "*-bronze-*": "PiercingAttack",
+                "*-corrupt-*": "PiercingAttack",
+                "*-corrupt-sawblade-*": "SlashingAttack"
+            },
+            "damagePlayerAtMs": 500,
+            "attackDurationMs": 800,
+            "animation": "attack",
+            "animationSpeed": 1.8,
+            "soundByType": {
+                "*-corrupt-sawblade-*": "creature/locust/saw"
+            },
+            "soundStartMs": 1000
+        },
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/8/aitasks/-",
+        "value": {
+            "code": "petseekentity",
+            "isCommandable": true,
+            "entityCodes": [
+                "drifter-*"
+            ],
+            "priority": 2.5,
+            "mincooldown": 500,
+            "maxcooldown": 1000,
+            "movespeed": 0.025,
+            "seekingRange": 15,
+            "maxFollowTime": 15,
+            "animationSpeed": 4.5,
+            "leapAtTarget": true,
+            "leapAnimation": "jump",
+            "animation": "rundrill"
+        },
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/8/aitasks/-",
+        "value": {
+            "code": "followmaster",
+            "priority": 2,
+            "entityCode": "locust",
+            "movespeed": 0.02,
+            "maxDistance": 7,
+            "searchRange": 999,
+            "animation": "run",
+            "animationSpeed": 6.5,
+            "allowTeleport": true
+        },
+        "file": "game:entities/land/locust-hacked.json"
+    },
+    {
+        "op": "add",
+        "path": "/server/behaviors/8/aitasks/-",
+        "value": {
+            "code": "stay",
+            "priority": 2.6,
+            "priorityForCancel": 1.9,
+            "command": "stay",
+            "movespeed": 0.004,
+            "animationSpeed": 2.5,
+            "maxDistance": 2,
+            "animation": "Walk"
+        },
+        "file": "game:entities/land/locust-hacked.json"
+    }
+]
